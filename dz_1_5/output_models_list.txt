@@ -1,0 +1,1202 @@
+Топ-100 моделей для ner:
+
+==================================================
+  dslim/bert-base-NER
+    Скачиваний: 1,788,469
+    Лайков: 707
+    Теги: transformers, pytorch, tf, jax, onnx
+    ID: dslim/bert-base-NER
+    Автор: dslim
+    Скачиваний: 1,788,469
+    Лицензия: mit
+    Теги: transformers, pytorch, tf, jax, onnx, safetensors, bert, token-classification
+    Размер: 108317193 параметров
+
+==================================================
+  w11wo/indonesian-roberta-base-posp-tagger
+    Скачиваний: 1,437,649
+    Лайков: 10
+    Теги: transformers, pytorch, tf, tensorboard, safetensors
+    ID: w11wo/indonesian-roberta-base-posp-tagger
+    Автор: w11wo
+    Скачиваний: 1,437,649
+    Лицензия: mit
+    Теги: transformers, pytorch, tf, tensorboard, safetensors, roberta, token-classification, generated_from_trainer
+    Размер: 124075034 параметров
+
+==================================================
+  StanfordAIMI/stanford-deidentifier-base
+    Скачиваний: 1,415,716
+    Лайков: 80
+    Теги: transformers, pytorch, bert, token-classification, sequence-tagger-model
+    ID: StanfordAIMI/stanford-deidentifier-base
+    Автор: StanfordAIMI
+    Скачиваний: 1,415,716
+    Лицензия: mit
+    Теги: transformers, pytorch, bert, token-classification, sequence-tagger-model, pubmedbert, uncased, radiology
+    Размер: неизвестно параметров
+
+==================================================
+  dbmdz/bert-large-cased-finetuned-conll03-english
+    Скачиваний: 1,129,169
+    Лайков: 96
+    Теги: transformers, pytorch, tf, jax, rust
+    ID: dbmdz/bert-large-cased-finetuned-conll03-english
+    Автор: dbmdz
+    Скачиваний: 1,129,169
+    Лицензия: нет данных
+    Теги: transformers, pytorch, tf, jax, rust, safetensors, bert, token-classification
+    Размер: 333588489 параметров
+
+==================================================
+  Babelscape/wikineural-multilingual-ner
+    Скачиваний: 790,075
+    Лайков: 160
+    Теги: transformers, pytorch, tensorboard, safetensors, bert
+    ID: Babelscape/wikineural-multilingual-ner
+    Автор: Babelscape
+    Скачиваний: 790,075
+    Лицензия: ['cc-by-nc-sa-4.0']
+    Теги: transformers, pytorch, tensorboard, safetensors, bert, token-classification, named-entity-recognition, sequence-tagger-model
+    Размер: 177270281 параметров
+
+==================================================
+  oliverguhr/fullstop-punctuation-multilang-large
+    Скачиваний: 628,433
+    Лайков: 174
+    Теги: transformers, pytorch, tf, onnx, safetensors
+    ID: oliverguhr/fullstop-punctuation-multilang-large
+    Автор: oliverguhr
+    Скачиваний: 628,433
+    Лицензия: mit
+    Теги: transformers, pytorch, tf, onnx, safetensors, xlm-roberta, token-classification, punctuation prediction
+    Размер: неизвестно параметров
+
+==================================================
+  microsoft/llmlingua-2-xlm-roberta-large-meetingbank
+    Скачиваний: 584,486
+    Лайков: 27
+    Теги: transformers, safetensors, xlm-roberta, token-classification, arxiv:2403.12968
+    ID: microsoft/llmlingua-2-xlm-roberta-large-meetingbank
+    Автор: microsoft
+    Скачиваний: 584,486
+    Лицензия: mit
+    Теги: transformers, safetensors, xlm-roberta, token-classification, arxiv:2403.12968, license:mit, endpoints_compatible, deploy:azure
+    Размер: 558945282 параметров
+
+==================================================
+  kredor/punctuate-all
+    Скачиваний: 541,196
+    Лайков: 26
+    Теги: transformers, pytorch, xlm-roberta, token-classification, dataset:wmt/europarl
+    ID: kredor/punctuate-all
+    Автор: kredor
+    Скачиваний: 541,196
+    Лицензия: mit
+    Теги: transformers, pytorch, xlm-roberta, token-classification, dataset:wmt/europarl, license:mit, endpoints_compatible, deploy:azure
+    Размер: неизвестно параметров
+
+==================================================
+  Davlan/xlm-roberta-large-ner-hrl
+    Скачиваний: 470,946
+    Лайков: 13
+    Теги: transformers, pytorch, tf, safetensors, xlm-roberta
+    ID: Davlan/xlm-roberta-large-ner-hrl
+    Автор: Davlan
+    Скачиваний: 470,946
+    Лицензия: afl-3.0
+    Теги: transformers, pytorch, tf, safetensors, xlm-roberta, token-classification, license:afl-3.0, endpoints_compatible
+    Размер: 558850571 параметров
+
+==================================================
+  obi/deid_roberta_i2b2
+    Скачиваний: 462,377
+    Лайков: 38
+    Теги: transformers, pytorch, safetensors, roberta, token-classification
+    ID: obi/deid_roberta_i2b2
+    Автор: obi
+    Скачиваний: 462,377
+    Лицензия: mit
+    Теги: transformers, pytorch, safetensors, roberta, token-classification, deidentification, medical notes, ehr
+    Размер: 354356783 параметров
+
+==================================================
+  flair/ner-english-fast
+    Скачиваний: 428,200
+    Лайков: 26
+    Теги: flair, pytorch, token-classification, sequence-tagger-model, en
+    ID: flair/ner-english-fast
+    Автор: flair
+    Скачиваний: 428,200
+    Лицензия: не указана
+    Теги: flair, pytorch, token-classification, sequence-tagger-model, en, dataset:conll2003, region:us
+    Размер: неизвестно параметров
+
+==================================================
+  Jean-Baptiste/roberta-large-ner-english
+    Скачиваний: 350,000
+    Лайков: 79
+    Теги: transformers, pytorch, tf, onnx, safetensors
+    ID: Jean-Baptiste/roberta-large-ner-english
+    Автор: Jean-Baptiste
+    Скачиваний: 350,000
+    Лицензия: mit
+    Теги: transformers, pytorch, tf, onnx, safetensors, roberta, token-classification, en
+    Размер: 354315783 параметров
+
+==================================================
+  ckiplab/bert-base-chinese-ws
+    Скачиваний: 345,734
+    Лайков: 19
+    Теги: transformers, pytorch, jax, bert, token-classification
+    ID: ckiplab/bert-base-chinese-ws
+    Автор: ckiplab
+    Скачиваний: 345,734
+    Лицензия: gpl-3.0
+    Теги: transformers, pytorch, jax, bert, token-classification, zh, license:gpl-3.0, endpoints_compatible
+    Размер: неизвестно параметров
+
+==================================================
+  lfcc/bert-portuguese-ner
+    Скачиваний: 291,618
+    Лайков: 9
+    Теги: transformers, pytorch, tensorboard, bert, token-classification
+    ID: lfcc/bert-portuguese-ner
+    Автор: lfcc
+    Скачиваний: 291,618
+    Лицензия: mit
+    Теги: transformers, pytorch, tensorboard, bert, token-classification, generated_from_trainer, license:mit, endpoints_compatible
+    Размер: неизвестно параметров
+
+==================================================
+  segment-any-text/sat-3l-sm
+    Скачиваний: 281,239
+    Лайков: 10
+    Теги: transformers, onnx, safetensors, xlm-token, token-classification
+    ID: segment-any-text/sat-3l-sm
+    Автор: segment-any-text
+    Скачиваний: 281,239
+    Лицензия: mit
+    Теги: transformers, onnx, safetensors, xlm-token, token-classification, multilingual, am, ar
+    Размер: 213662977 параметров
+
+==================================================
+  Davlan/bert-base-multilingual-cased-ner-hrl
+    Скачиваний: 280,503
+    Лайков: 82
+    Теги: transformers, pytorch, tf, onnx, safetensors
+    ID: Davlan/bert-base-multilingual-cased-ner-hrl
+    Автор: Davlan
+    Скачиваний: 280,503
+    Лицензия: afl-3.0
+    Теги: transformers, pytorch, tf, onnx, safetensors, bert, token-classification, license:afl-3.0
+    Размер: 177270281 параметров
+
+==================================================
+  dslim/distilbert-NER
+    Скачиваний: 252,042
+    Лайков: 51
+    Теги: transformers, tensorboard, onnx, safetensors, distilbert
+    ID: dslim/distilbert-NER
+    Автор: dslim
+    Скачиваний: 252,042
+    Лицензия: apache-2.0
+    Теги: transformers, tensorboard, onnx, safetensors, distilbert, token-classification, en, dataset:conll2003
+    Размер: 65197833 параметров
+
+==================================================
+  Gherman/bert-base-NER-Russian
+    Скачиваний: 250,234
+    Лайков: 21
+    Теги: transformers, safetensors, bert, token-classification, ru
+    ID: Gherman/bert-base-NER-Russian
+    Автор: Gherman
+    Скачиваний: 250,234
+    Лицензия: mit
+    Теги: transformers, safetensors, bert, token-classification, ru, base_model:google-bert/bert-base-multilingual-cased, base_model:finetune:google-bert/bert-base-multilingual-cased, license:mit
+    Размер: 177288994 параметров
+
+==================================================
+  tomaarsen/span-marker-mbert-base-multinerd
+    Скачиваний: 248,299
+    Лайков: 71
+    Теги: span-marker, pytorch, tensorboard, safetensors, token-classification
+    ID: tomaarsen/span-marker-mbert-base-multinerd
+    Автор: tomaarsen
+    Скачиваний: 248,299
+    Лицензия: cc-by-nc-sa-4.0
+    Теги: span-marker, pytorch, tensorboard, safetensors, token-classification, ner, named-entity-recognition, multilingual
+    Размер: 177880080 параметров
+
+==================================================
+  tomaarsen/span-marker-bert-base-uncased-acronyms
+    Скачиваний: 238,069
+    Лайков: 6
+    Теги: span-marker, pytorch, tensorboard, safetensors, token-classification
+    ID: tomaarsen/span-marker-bert-base-uncased-acronyms
+    Автор: tomaarsen
+    Скачиваний: 238,069
+    Лицензия: apache-2.0
+    Теги: span-marker, pytorch, tensorboard, safetensors, token-classification, ner, named-entity-recognition, generated_from_span_marker_trainer
+    Размер: 109488899 параметров
+
+==================================================
+  dicta-il/dictabert-ner
+    Скачиваний: 229,600
+    Лайков: 6
+    Теги: transformers, pytorch, safetensors, bert, token-classification
+    ID: dicta-il/dictabert-ner
+    Автор: dicta-il
+    Скачиваний: 229,600
+    Лицензия: cc-by-4.0
+    Теги: transformers, pytorch, safetensors, bert, token-classification, he, arxiv:2308.16687, license:cc-by-4.0
+    Размер: 183775515 параметров
+
+==================================================
+  kontur-ai/sbert_punc_case_ru
+    Скачиваний: 225,072
+    Лайков: 39
+    Теги: transformers, safetensors, bert, token-classification, PyTorch
+    ID: kontur-ai/sbert_punc_case_ru
+    Автор: kontur-ai
+    Скачиваний: 225,072
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, PyTorch, Transformers, ru, base_model:ai-forever/sbert_large_nlu_ru
+    Размер: 425872397 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-434M
+    Скачиваний: 221,876
+    Лайков: 24
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-434M
+    Автор: OpenMed
+    Скачиваний: 221,876
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 434015235 параметров
+
+==================================================
+  gilf/french-camembert-postag-model
+    Скачиваний: 221,222
+    Лайков: 9
+    Теги: transformers, pytorch, tf, safetensors, camembert
+    ID: gilf/french-camembert-postag-model
+    Автор: gilf
+    Скачиваний: 221,222
+    Лицензия: не указана
+    Теги: transformers, pytorch, tf, safetensors, camembert, token-classification, fr, endpoints_compatible
+    Размер: 110645022 параметров
+
+==================================================
+  mirth/chonky_distilbert_base_uncased_1
+    Скачиваний: 217,618
+    Лайков: 15
+    Теги: transformers, safetensors, distilbert, token-classification, chunking
+    ID: mirth/chonky_distilbert_base_uncased_1
+    Автор: mirth
+    Скачиваний: 217,618
+    Лицензия: mit
+    Теги: transformers, safetensors, distilbert, token-classification, chunking, RAG, en, dataset:bookcorpus/bookcorpus
+    Размер: 66364418 параметров
+
+==================================================
+  segment-any-text/sat-12l-sm
+    Скачиваний: 216,810
+    Лайков: 28
+    Теги: transformers, onnx, safetensors, xlm-token, token-classification
+    ID: segment-any-text/sat-12l-sm
+    Автор: segment-any-text
+    Скачиваний: 216,810
+    Лицензия: mit
+    Теги: transformers, onnx, safetensors, xlm-token, token-classification, multilingual, am, ar
+    Размер: 277453825 параметров
+
+==================================================
+  DeepMount00/Italian_NER_XXL_v2
+    Скачиваний: 215,419
+    Лайков: 28
+    Теги: safetensors, bert, legal, finance, medical
+    ID: DeepMount00/Italian_NER_XXL_v2
+    Автор: DeepMount00
+    Скачиваний: 215,419
+    Лицензия: apache-2.0
+    Теги: safetensors, bert, legal, finance, medical, privacy, named-entity-recognition, token-classification
+    Размер: 110195061 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-BloodCancerDetect-TinyMed-65M
+    Скачиваний: 211,309
+    Лайков: 0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-BloodCancerDetect-TinyMed-65M
+    Автор: OpenMed
+    Скачиваний: 211,309
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition, biomedical-nlp, leukemia, hematology
+    Размер: 65193219 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M
+    Скачиваний: 194,521
+    Лайков: 0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M
+    Автор: OpenMed
+    Скачиваний: 194,521
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 149607171 параметров
+
+==================================================
+  akdeniz27/bert-base-turkish-cased-ner
+    Скачиваний: 189,533
+    Лайков: 25
+    Теги: transformers, pytorch, onnx, safetensors, bert
+    ID: akdeniz27/bert-base-turkish-cased-ner
+    Автор: akdeniz27
+    Скачиваний: 189,533
+    Лицензия: mit
+    Теги: transformers, pytorch, onnx, safetensors, bert, token-classification, tr, doi:10.57967/hf/0949
+    Размер: 110032647 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-395M
+    Скачиваний: 187,828
+    Лайков: 0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-395M
+    Автор: OpenMed
+    Скачиваний: 187,828
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 395834371 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-SpeciesDetect-ElectraMed-109M
+    Скачиваний: 185,906
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-SpeciesDetect-ElectraMed-109M
+    Автор: OpenMed
+    Скачиваний: 185,906
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 108893955 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M
+    Скачиваний: 185,784
+    Лайков: 1
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M
+    Автор: OpenMed
+    Скачиваний: 185,784
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition, biomedical-nlp, protein-recognition, gene-recognition
+    Размер: 124063499 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PathologyDetect-TinyMed-135M
+    Скачиваний: 184,843
+    Лайков: 0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PathologyDetect-TinyMed-135M
+    Автор: OpenMed
+    Скачиваний: 184,843
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 134736387 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-AnatomyDetect-ElectraMed-109M
+    Скачиваний: 184,745
+    Лайков: 1
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-AnatomyDetect-ElectraMed-109M
+    Автор: OpenMed
+    Скачиваний: 184,745
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, anatomical-entity-recognition, medical-terminology
+    Размер: 108893955 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OncologyDetect-MultiMed-568M
+    Скачиваний: 176,489
+    Лайков: 1
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OncologyDetect-MultiMed-568M
+    Автор: OpenMed
+    Скачиваний: 176,489
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, cancer-genetics, oncology
+    Размер: 566738977 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OncologyDetect-BigMed-278M
+    Скачиваний: 169,216
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OncologyDetect-BigMed-278M
+    Автор: OpenMed
+    Скачиваний: 169,216
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, cancer-genetics, oncology
+    Размер: 277478433 параметров
+
+==================================================
+  Xenova/bert-base-NER
+    Скачиваний: 162,615
+    Лайков: 3
+    Теги: transformers.js, onnx, bert, token-classification, base_model:dslim/bert-base-NER
+    ID: Xenova/bert-base-NER
+    Автор: Xenova
+    Скачиваний: 162,615
+    Лицензия: не указана
+    Теги: transformers.js, onnx, bert, token-classification, base_model:dslim/bert-base-NER, base_model:quantized:dslim/bert-base-NER, region:us
+    Размер: неизвестно параметров
+
+==================================================
+  Jean-Baptiste/camembert-ner-with-dates
+    Скачиваний: 155,617
+    Лайков: 46
+    Теги: transformers, pytorch, onnx, safetensors, camembert
+    ID: Jean-Baptiste/camembert-ner-with-dates
+    Автор: Jean-Baptiste
+    Скачиваний: 155,617
+    Лицензия: mit
+    Теги: transformers, pytorch, onnx, safetensors, camembert, token-classification, fr, dataset:Jean-Baptiste/wikiner_fr
+    Размер: 110036488 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OrganismDetect-TinyMed-82M
+    Скачиваний: 153,299
+    Лайков: 0
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OrganismDetect-TinyMed-82M
+    Автор: OpenMed
+    Скачиваний: 153,299
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 81530115 параметров
+
+==================================================
+  tner/roberta-large-tweetner7-all
+    Скачиваний: 153,061
+    Лайков: 1
+    Теги: transformers, pytorch, roberta, token-classification, dataset:tner/tweetner7
+    ID: tner/roberta-large-tweetner7-all
+    Автор: tner
+    Скачиваний: 153,061
+    Лицензия: не указана
+    Теги: transformers, pytorch, roberta, token-classification, dataset:tner/tweetner7, model-index, endpoints_compatible, deploy:azure
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ChemicalDetect-MultiMed-568M
+    Скачиваний: 148,845
+    Лайков: 1
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ChemicalDetect-MultiMed-568M
+    Автор: OpenMed
+    Скачиваний: 148,845
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 566708227 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OrganismDetect-BioPatient-108M
+    Скачиваний: 148,404
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OrganismDetect-BioPatient-108M
+    Автор: OpenMed
+    Скачиваний: 148,404
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 107721987 параметров
+
+==================================================
+  flair/ner-english
+    Скачиваний: 145,265
+    Лайков: 36
+    Теги: flair, pytorch, token-classification, sequence-tagger-model, en
+    ID: flair/ner-english
+    Автор: flair
+    Скачиваний: 145,265
+    Лицензия: не указана
+    Теги: flair, pytorch, token-classification, sequence-tagger-model, en, dataset:conll2003, region:us
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ChemicalDetect-BigMed-560M
+    Скачиваний: 142,734
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ChemicalDetect-BigMed-560M
+    Автор: OpenMed
+    Скачиваний: 142,734
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 558843907 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M
+    Скачиваний: 142,519
+    Лайков: 7
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M
+    Автор: OpenMed
+    Скачиваний: 142,519
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 334095363 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-DiseaseDetect-ElectraMed-109M
+    Скачиваний: 142,379
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-DiseaseDetect-ElectraMed-109M
+    Автор: OpenMed
+    Скачиваний: 142,379
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 108893955 параметров
+
+==================================================
+  microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank
+    Скачиваний: 142,185
+    Лайков: 50
+    Теги: transformers, safetensors, bert, token-classification, arxiv:2403.12968
+    ID: microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank
+    Автор: microsoft
+    Скачиваний: 142,185
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, arxiv:2403.12968, license:apache-2.0, endpoints_compatible, deploy:azure
+    Размер: 177341186 параметров
+
+==================================================
+  ai4bharat/IndicNER
+    Скачиваний: 142,064
+    Лайков: 29
+    Теги: transformers, pytorch, bert, token-classification, ner
+    ID: ai4bharat/IndicNER
+    Автор: ai4bharat
+    Скачиваний: 142,064
+    Лицензия: mit
+    Теги: transformers, pytorch, bert, token-classification, ner, Pytorch, transformer, multilingual
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PharmaDetect-ModernClinical-149M
+    Скачиваний: 141,027
+    Лайков: 6
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PharmaDetect-ModernClinical-149M
+    Автор: OpenMed
+    Скачиваний: 141,027
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: неизвестно параметров
+
+==================================================
+  hantian/layoutreader
+    Скачиваний: 137,875
+    Лайков: 42
+    Теги: transformers, pytorch, safetensors, layoutlmv3, token-classification
+    ID: hantian/layoutreader
+    Автор: hantian
+    Скачиваний: 137,875
+    Лицензия: cc-by-nc-sa-4.0
+    Теги: transformers, pytorch, safetensors, layoutlmv3, token-classification, license:cc-by-nc-sa-4.0, endpoints_compatible, region:us
+    Размер: 356583422 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomicDetect-PubMed-335M
+    Скачиваний: 137,051
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomicDetect-PubMed-335M
+    Автор: OpenMed
+    Скачиваний: 137,051
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, genetics
+    Размер: 334095363 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-BloodCancerDetect-ElectraMed-560M
+    Скачиваний: 134,901
+    Лайков: 1
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-BloodCancerDetect-ElectraMed-560M
+    Автор: OpenMed
+    Скачиваний: 134,901
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, leukemia, hematology
+    Размер: 558843907 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M
+    Скачиваний: 133,276
+    Лайков: 0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M
+    Автор: OpenMed
+    Скачиваний: 133,276
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition, biomedical-nlp, protein-interactions, molecular-biology
+    Размер: 141312779 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OncologyDetect-SuperClinical-434M
+    Скачиваний: 133,118
+    Лайков: 9
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OncologyDetect-SuperClinical-434M
+    Автор: OpenMed
+    Скачиваний: 133,118
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition, biomedical-nlp, cancer-genetics, oncology
+    Размер: 434045985 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-SpeciesDetect-ModernClinical-395M
+    Скачиваний: 131,095
+    Лайков: 0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-SpeciesDetect-ModernClinical-395M
+    Автор: OpenMed
+    Скачиваний: 131,095
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 395834371 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PharmaDetect-BioPatient-108M
+    Скачиваний: 130,524
+    Лайков: 1
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PharmaDetect-BioPatient-108M
+    Автор: OpenMed
+    Скачиваний: 130,524
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 107721987 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PharmaDetect-BigMed-560M
+    Скачиваний: 128,370
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PharmaDetect-BigMed-560M
+    Автор: OpenMed
+    Скачиваний: 128,370
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 558843907 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomicDetect-PubMed-109M
+    Скачиваний: 126,794
+    Лайков: 4
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomicDetect-PubMed-109M
+    Автор: OpenMed
+    Скачиваний: 126,794
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, genetics
+    Размер: 108893955 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomeDetect-ModernMed-149M
+    Скачиваний: 125,827
+    Лайков: 0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomeDetect-ModernMed-149M
+    Автор: OpenMed
+    Скачиваний: 125,827
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, protein-recognition
+    Размер: 149607171 параметров
+
+==================================================
+  dslim/bert-large-NER
+    Скачиваний: 124,551
+    Лайков: 162
+    Теги: transformers, pytorch, tf, jax, onnx
+    ID: dslim/bert-large-NER
+    Автор: dslim
+    Скачиваний: 124,551
+    Лицензия: mit
+    Теги: transformers, pytorch, tf, jax, onnx, safetensors, bert, token-classification
+    Размер: 333588489 параметров
+
+==================================================
+  flair/ner-english-ontonotes-large
+    Скачиваний: 123,729
+    Лайков: 100
+    Теги: flair, pytorch, token-classification, sequence-tagger-model, en
+    ID: flair/ner-english-ontonotes-large
+    Автор: flair
+    Скачиваний: 123,729
+    Лицензия: не указана
+    Теги: flair, pytorch, token-classification, sequence-tagger-model, en, dataset:ontonotes, arxiv:2011.06993, region:us
+    Размер: неизвестно параметров
+
+==================================================
+  saattrupdan/nbailab-base-ner-scandi
+    Скачиваний: 122,140
+    Лайков: 24
+    Теги: transformers, pytorch, safetensors, bert, token-classification
+    ID: saattrupdan/nbailab-base-ner-scandi
+    Автор: saattrupdan
+    Скачиваний: 122,140
+    Лицензия: mit
+    Теги: transformers, pytorch, safetensors, bert, token-classification, da, no, nb
+    Размер: 177270281 параметров
+
+==================================================
+  FacebookAI/xlm-roberta-large-finetuned-conll03-english
+    Скачиваний: 120,477
+    Лайков: 184
+    Теги: transformers, pytorch, rust, onnx, safetensors
+    ID: FacebookAI/xlm-roberta-large-finetuned-conll03-english
+    Автор: FacebookAI
+    Скачиваний: 120,477
+    Лицензия: не указана
+    Теги: transformers, pytorch, rust, onnx, safetensors, xlm-roberta, token-classification, multilingual
+    Размер: 559898632 параметров
+
+==================================================
+  oliverguhr/fullstop-punctuation-multilingual-base
+    Скачиваний: 119,704
+    Лайков: 7
+    Теги: transformers, pytorch, tensorboard, safetensors, xlm-roberta
+    ID: oliverguhr/fullstop-punctuation-multilingual-base
+    Автор: oliverguhr
+    Скачиваний: 119,704
+    Лицензия: mit
+    Теги: transformers, pytorch, tensorboard, safetensors, xlm-roberta, token-classification, punctuation prediction, punctuation
+    Размер: 277458184 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomicDetect-BigMed-560M
+    Скачиваний: 116,178
+    Лайков: 1
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomicDetect-BigMed-560M
+    Автор: OpenMed
+    Скачиваний: 116,178
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, genetics
+    Размер: 558843907 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PharmaDetect-BigMed-278M
+    Скачиваний: 112,809
+    Лайков: 5
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PharmaDetect-BigMed-278M
+    Автор: OpenMed
+    Скачиваний: 112,809
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 277455363 параметров
+
+==================================================
+  CAMeL-Lab/bert-base-arabic-camelbert-msa-ner
+    Скачиваний: 112,685
+    Лайков: 7
+    Теги: transformers, pytorch, tf, bert, token-classification
+    ID: CAMeL-Lab/bert-base-arabic-camelbert-msa-ner
+    Автор: CAMeL-Lab
+    Скачиваний: 112,685
+    Лицензия: apache-2.0
+    Теги: transformers, pytorch, tf, bert, token-classification, ar, arxiv:2103.06678, license:apache-2.0
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OrganismDetect-BioMed-109M
+    Скачиваний: 107,746
+    Лайков: 2
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OrganismDetect-BioMed-109M
+    Автор: OpenMed
+    Скачиваний: 107,746
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 108893955 параметров
+
+==================================================
+  Davlan/xlm-roberta-base-ner-hrl
+    Скачиваний: 106,734
+    Лайков: 28
+    Теги: transformers, pytorch, safetensors, xlm-roberta, token-classification
+    ID: Davlan/xlm-roberta-base-ner-hrl
+    Автор: Davlan
+    Скачиваний: 106,734
+    Лицензия: afl-3.0
+    Теги: transformers, pytorch, safetensors, xlm-roberta, token-classification, license:afl-3.0, endpoints_compatible, region:us
+    Размер: 277460491 параметров
+
+==================================================
+  pierreguillou/ner-bert-base-cased-pt-lenerbr
+    Скачиваний: 105,043
+    Лайков: 20
+    Теги: transformers, pytorch, bert, token-classification, generated_from_trainer
+    ID: pierreguillou/ner-bert-base-cased-pt-lenerbr
+    Автор: pierreguillou
+    Скачиваний: 105,043
+    Лицензия: не указана
+    Теги: transformers, pytorch, bert, token-classification, generated_from_trainer, pt, dataset:lener_br, model-index
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ChemicalDetect-PubMed-335M
+    Скачиваний: 105,034
+    Лайков: 1
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ChemicalDetect-PubMed-335M
+    Автор: OpenMed
+    Скачиваний: 105,034
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 334095363 параметров
+
+==================================================
+  d4data/biomedical-ner-all
+    Скачиваний: 103,652
+    Лайков: 190
+    Теги: transformers, pytorch, safetensors, distilbert, token-classification
+    ID: d4data/biomedical-ner-all
+    Автор: d4data
+    Скачиваний: 103,652
+    Лицензия: apache-2.0
+    Теги: transformers, pytorch, safetensors, distilbert, token-classification, Token Classification, en, license:apache-2.0
+    Размер: 66427476 параметров
+
+==================================================
+  ckiplab/bert-base-chinese-pos
+    Скачиваний: 102,849
+    Лайков: 17
+    Теги: transformers, pytorch, jax, bert, token-classification
+    ID: ckiplab/bert-base-chinese-pos
+    Автор: ckiplab
+    Скачиваний: 102,849
+    Лицензия: gpl-3.0
+    Теги: transformers, pytorch, jax, bert, token-classification, zh, license:gpl-3.0, endpoints_compatible
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-DiseaseDetect-SuperClinical-434M
+    Скачиваний: 101,800
+    Лайков: 6
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-DiseaseDetect-SuperClinical-434M
+    Автор: OpenMed
+    Скачиваний: 101,800
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 434015235 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PathologyDetect-PubMed-109M
+    Скачиваний: 99,635
+    Лайков: 4
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PathologyDetect-PubMed-109M
+    Автор: OpenMed
+    Скачиваний: 99,635
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 108893955 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ProteinDetect-SnowMed-568M
+    Скачиваний: 99,493
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ProteinDetect-SnowMed-568M
+    Автор: OpenMed
+    Скачиваний: 99,493
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, protein-interactions, molecular-biology
+    Размер: 566716427 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomeDetect-PubMed-109M
+    Скачиваний: 98,462
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomeDetect-PubMed-109M
+    Автор: OpenMed
+    Скачиваний: 98,462
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, protein-recognition
+    Размер: 108893955 параметров
+
+==================================================
+  siddharthtumre/biobert-finetuned-ner
+    Скачиваний: 96,777
+    Лайков: 1
+    Теги: transformers, pytorch, bert, token-classification, generated_from_trainer
+    ID: siddharthtumre/biobert-finetuned-ner
+    Автор: siddharthtumre
+    Скачиваний: 96,777
+    Лицензия: не указана
+    Теги: transformers, pytorch, bert, token-classification, generated_from_trainer, dataset:jnlpba, model-index, endpoints_compatible
+    Размер: неизвестно параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OncologyDetect-SuperMedical-355M
+    Скачиваний: 96,675
+    Лайков: 3
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OncologyDetect-SuperMedical-355M
+    Автор: OpenMed
+    Скачиваний: 96,675
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition, biomedical-nlp, cancer-genetics, oncology
+    Размер: 354343969 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PathologyDetect-BigMed-560M
+    Скачиваний: 96,577
+    Лайков: 8
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PathologyDetect-BigMed-560M
+    Автор: OpenMed
+    Скачиваний: 96,577
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 558843907 параметров
+
+==================================================
+  pythainlp/thainer-corpus-v2-base-model
+    Скачиваний: 94,718
+    Лайков: 16
+    Теги: transformers, pytorch, safetensors, camembert, token-classification
+    ID: pythainlp/thainer-corpus-v2-base-model
+    Автор: pythainlp
+    Скачиваний: 94,718
+    Лицензия: cc-by-4.0
+    Теги: transformers, pytorch, safetensors, camembert, token-classification, th, dataset:pythainlp/thainer-corpus-v2, license:cc-by-4.0
+    Размер: 104682020 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-BloodCancerDetect-SnowMed-568M
+    Скачиваний: 93,680
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-BloodCancerDetect-SnowMed-568M
+    Автор: OpenMed
+    Скачиваний: 93,680
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, leukemia, hematology
+    Размер: 566708227 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-DNADetect-SnowMed-568M
+    Скачиваний: 93,515
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-DNADetect-SnowMed-568M
+    Автор: OpenMed
+    Скачиваний: 93,515
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, protein-recognition, gene-recognition
+    Размер: 566716427 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomeDetect-ElectraMed-560M
+    Скачиваний: 93,244
+    Лайков: 0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomeDetect-ElectraMed-560M
+    Автор: OpenMed
+    Скачиваний: 93,244
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, xlm-roberta, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, protein-recognition
+    Размер: 558843907 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomicDetect-MultiMed-335M
+    Скачиваний: 93,157
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomicDetect-MultiMed-335M
+    Автор: OpenMed
+    Скачиваний: 93,157
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, genetics
+    Размер: 334095363 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ProteinDetect-TinyMed-135M
+    Скачиваний: 93,080
+    Лайков: 0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ProteinDetect-TinyMed-135M
+    Автор: OpenMed
+    Скачиваний: 93,080
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition, biomedical-nlp, protein-interactions, molecular-biology
+    Размер: 134742539 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OncologyDetect-ElectraMed-33M
+    Скачиваний: 93,077
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OncologyDetect-ElectraMed-33M
+    Автор: OpenMed
+    Скачиваний: 93,077
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, cancer-genetics, oncology
+    Размер: 33224865 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-SpeciesDetect-PubMed-109M
+    Скачиваний: 92,843
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-SpeciesDetect-PubMed-109M
+    Автор: OpenMed
+    Скачиваний: 92,843
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 108893955 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-PathologyDetect-SuperClinical-184M
+    Скачиваний: 92,713
+    Лайков: 0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-PathologyDetect-SuperClinical-184M
+    Автор: OpenMed
+    Скачиваний: 92,713
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition, biomedical-nlp, disease-entity-recognition, medical-diagnosis
+    Размер: 183833859 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomeDetect-ModernMed-395M
+    Скачиваний: 92,698
+    Лайков: 0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomeDetect-ModernMed-395M
+    Автор: OpenMed
+    Скачиваний: 92,698
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, protein-recognition
+    Размер: 395834371 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-BloodCancerDetect-ModernMed-149M
+    Скачиваний: 92,602
+    Лайков: 0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-BloodCancerDetect-ModernMed-149M
+    Автор: OpenMed
+    Скачиваний: 92,602
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, modernbert, token-classification, named-entity-recognition, biomedical-nlp, leukemia, hematology
+    Размер: 149607171 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ChemicalDetect-BioMed-335M
+    Скачиваний: 92,564
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ChemicalDetect-BioMed-335M
+    Автор: OpenMed
+    Скачиваний: 92,564
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, chemical-entity-recognition, drug-discovery
+    Размер: 334095363 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OrganismDetect-PubMed-335M
+    Скачиваний: 92,527
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OrganismDetect-PubMed-335M
+    Автор: OpenMed
+    Скачиваний: 92,527
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 334095363 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-GenomicDetect-SuperMedical-125M
+    Скачиваний: 92,304
+    Лайков: 0
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-GenomicDetect-SuperMedical-125M
+    Автор: OpenMed
+    Скачиваний: 92,304
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, roberta, token-classification, named-entity-recognition, biomedical-nlp, gene-recognition, genetics
+    Размер: 124057347 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-BloodCancerDetect-PubMed-335M
+    Скачиваний: 92,188
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-BloodCancerDetect-PubMed-335M
+    Автор: OpenMed
+    Скачиваний: 92,188
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, leukemia, hematology
+    Размер: 334095363 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-SpeciesDetect-TinyMed-135M
+    Скачиваний: 92,023
+    Лайков: 0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-SpeciesDetect-TinyMed-135M
+    Автор: OpenMed
+    Скачиваний: 92,023
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 134736387 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-OrganismDetect-SuperClinical-434M
+    Скачиваний: 91,745
+    Лайков: 0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-OrganismDetect-SuperClinical-434M
+    Автор: OpenMed
+    Скачиваний: 91,745
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, deberta-v2, token-classification, named-entity-recognition, biomedical-nlp, species-recognition, taxonomy
+    Размер: 434015235 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-ProteinDetect-BioClinical-108M
+    Скачиваний: 91,623
+    Лайков: 0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-ProteinDetect-BioClinical-108M
+    Автор: OpenMed
+    Скачиваний: 91,623
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, bert, token-classification, named-entity-recognition, biomedical-nlp, protein-interactions, molecular-biology
+    Размер: 107728139 параметров
+
+==================================================
+  OpenMed/OpenMed-NER-BloodCancerDetect-TinyMed-66M
+    Скачиваний: 91,535
+    Лайков: 0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition
+    ID: OpenMed/OpenMed-NER-BloodCancerDetect-TinyMed-66M
+    Автор: OpenMed
+    Скачиваний: 91,535
+    Лицензия: apache-2.0
+    Теги: transformers, safetensors, distilbert, token-classification, named-entity-recognition, biomedical-nlp, leukemia, hematology
+    Размер: 66365187 параметров
+
