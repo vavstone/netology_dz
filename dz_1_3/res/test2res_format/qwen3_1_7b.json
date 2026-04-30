@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Смирнов Андрей Викторович",
+        "email": "a.smirnov@mail.ru",
+        "debt": 12450,
+        "days_overdue": 58
+    },
+    {
+        "name": "Теймуразов Георгий Константинович",
+        "email": "george.t@ge.com",
+        "debt": 32000,
+        "days_overdue": 45
+    },
+    {
+        "name": "Park Sung-ho",
+        "email": "sungpark@company.kr",
+        "debt": 18750,
+        "days_overdue": 72
+    },
+    {
+        "name": "Иванова Анна Сергеевна",
+        "email": "anneta_ivanova@bk.ru",
+        "debt": 890.99,
+        "days_overdue": 14
+    }
+]
