@@ -1,0 +1,219 @@
+Бенчмарк моделей по eval набору (1 задач):
+
+ollama       | gemma3:1b            |  TTFT: 3.301s | Total: 3.66s | Avg tokens: 11.00 | 31.0 tok/s | Avg avg_usage_input_tokens: 38.00 | Avg avg_usage_output_tokens: 10.00 | Avg avg_usage_all_tokens: 48.00 | Eval passed: 1 
+ollama       | qwen3:1.7b           |  TTFT: 0.279s | Total: 10.42s | Avg tokens: 220.00 | 21.7 tok/s | Avg avg_usage_input_tokens: 49.00 | Avg avg_usage_output_tokens: 223.00 | Avg avg_usage_all_tokens: 272.00 | Eval passed: 1 
+openai       | gpt-4o-mini          |  TTFT: 5.482s | Total: 5.61s | Avg tokens: 11.00 | 86.1 tok/s | Avg avg_usage_input_tokens: 36.00 | Avg avg_usage_output_tokens: 8.00 | Avg avg_usage_all_tokens: 44.00 | Eval passed: 1 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: gemma3:1b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+
+Провайдер: ollama, модель: qwen3:1.7b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+Провайдер: openai, модель: gpt-4o-mini
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42.
+Бенчмарк моделей по eval набору (1 задач):
+
+ollama       | gemma3:1b        |  TTFT: 1.231s | Avg total: 1.79s | Avg tokens: 11 | 19.7 tok/s | Avg avg_usage_input_tokens: 38 | Avg avg_usage_output_tokens: 10 | Avg avg_usage_all_tokens: 48 | Eval passed: 1 
+ollama       | qwen3:1.7b       |  TTFT: 0.315s | Avg total: 10.24s | Avg tokens: 220 | 22.2 tok/s | Avg avg_usage_input_tokens: 49 | Avg avg_usage_output_tokens: 223 | Avg avg_usage_all_tokens: 272 | Eval passed: 1 
+openai       | gpt-4o-mini      |  TTFT: 2.945s | Avg total: 2.95s | Avg tokens: 11 | 3622.4 tok/s | Avg avg_usage_input_tokens: 36 | Avg avg_usage_output_tokens: 8 | Avg avg_usage_all_tokens: 44 | Eval passed: 1 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: gemma3:1b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+
+Провайдер: ollama, модель: qwen3:1.7b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+Провайдер: openai, модель: gpt-4o-mini
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42.
+Бенчмарк моделей по eval набору (1 задач):
+
+ollama       | gemma3:1b        |  TTFT: 1.068s | Avg total:  1.45s | Avg tokens: 11 | 28.8 tok/s | Avg avg_usage_input_tokens: 38 | Avg avg_usage_output_tokens: 10 | Avg avg_usage_all_tokens: 48 | Eval passed: 1 
+ollama       | qwen3:1.7b       |  TTFT: 0.264s | Avg total: 10.49s | Avg tokens: 220 | 21.5 tok/s | Avg avg_usage_input_tokens: 49 | Avg avg_usage_output_tokens: 223 | Avg avg_usage_all_tokens: 272 | Eval passed: 1 
+openai       | gpt-4o-mini      |  TTFT: 2.335s | Avg total:  2.66s | Avg tokens: 11 | 34.2 tok/s | Avg avg_usage_input_tokens: 36 | Avg avg_usage_output_tokens: 8 | Avg avg_usage_all_tokens: 44 | Eval passed: 1 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: gemma3:1b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+
+Провайдер: ollama, модель: qwen3:1.7b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+Провайдер: openai, модель: gpt-4o-mini
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42.
+Бенчмарк моделей по eval набору (1 задач):
+
+ollama       | gemma3:1b        |  TTFT: 1.103s | Avg total:  1.49s | Avg tokens:    11 | 28.3 tok/s | Avg avg_usage_input_tokens:    38 | Avg avg_usage_output_tokens:    10 | Avg avg_usage_all_tokens:    48 | Eval passed: 1 
+ollama       | qwen3:1.7b       |  TTFT: 0.305s | Avg total: 10.55s | Avg tokens:   220 | 21.5 tok/s | Avg avg_usage_input_tokens:    49 | Avg avg_usage_output_tokens:   223 | Avg avg_usage_all_tokens:   272 | Eval passed: 1 
+openai       | gpt-4o-mini      |  TTFT: 5.459s | Avg total:  5.54s | Avg tokens:    10 | 131.0 tok/s | Avg avg_usage_input_tokens:    36 | Avg avg_usage_output_tokens:     7 | Avg avg_usage_all_tokens:    43 | Eval passed: 1 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: gemma3:1b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+
+Провайдер: ollama, модель: qwen3:1.7b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+Провайдер: openai, модель: gpt-4o-mini
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+Бенчмарк моделей по eval набору (1 задач):
+
+ollama       | gemma3:1b        |  TTFT: 1.090s | Avg total:  1.46s | Avg tokens:    11 |  29.9 tok/s | Avg avg_usage_input_tokens:    38 | Avg avg_usage_output_tokens:    10 | Avg avg_usage_all_tokens:    48 | Eval passed: 1 
+ollama       | qwen3:1.7b       |  TTFT: 0.265s | Avg total: 10.26s | Avg tokens:   220 |  22.0 tok/s | Avg avg_usage_input_tokens:    49 | Avg avg_usage_output_tokens:   223 | Avg avg_usage_all_tokens:   272 | Eval passed: 1 
+openai       | gpt-4o-mini      |  TTFT: 3.173s | Avg total:  3.26s | Avg tokens:    11 | 123.1 tok/s | Avg avg_usage_input_tokens:    36 | Avg avg_usage_output_tokens:     8 | Avg avg_usage_all_tokens:    44 | Eval passed: 1 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: gemma3:1b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+
+Провайдер: ollama, модель: qwen3:1.7b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42
+
+Провайдер: openai, модель: gpt-4o-mini
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: REQ-42.
+Бенчмарк моделей по eval набору (5 задач):
+
+ollama       | gemma3:4b        |  TTFT: 3.477s | Avg total:  4.47s | Avg tokens:    14 |  14.2 tok/s | Avg avg_usage_input_tokens:    57 | Avg avg_usage_output_tokens:    13 | Avg avg_usage_all_tokens:    69 | Eval passed: 5 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: gemma3:4b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: REQ-42
+
+ 2. ✓ Task: Извлечение имени таблицы из DDL
+Prompt: Вот SQL: 'CREATE TABLE order_items (id INT, order_id INT, product_name VARCHAR);' Какое имя таблицы?
+Model result: Имя таблицы — `order_items`.
+
+ 3. ✓ Task: Поиск шага в контрольном примере
+Prompt: Контрольный пример TC_LOGIN_01:
+1. Открыть страницу /login
+2. Ввести email user@example.com
+3. Ввести пароль '123'
+4. Нажать кнопку 'Войти'
+Ожидаемый результат: перенаправление на /dashboard
+Вопрос: какой шаг содержит ввод пароля? Ответ цифрой.
+Model result: Ответ: 3
+
+ 4. ✓ Task: Сравнение версий спецификации
+Prompt: Версия 1.2 спецификации: эндпоинты – GET: /users, POST: /users. Версия 1.3: эндпоинты – GET: /users, POST: /users, DELETE: /users/{id}. Какой эндпоинт добавлен в 1.3?
+Model result: В версии 1.3 добавлен эндпоинт DELETE: /users/{id}.
+
+ 5. ✓ Task: Извлечение сигнатуры функции из руководства программиста
+Prompt: В руководстве: 'Функция calculate_discount(price: float, code: str) -> float применяет купон.' Выпиши сигнатуру.
+Model result: `calculate_discount(price: float, code: str) -> float`
+
+Бенчмарк моделей по eval набору (5 задач):
+
+ollama       | qwen3:8b         |  TTFT: 6.804s | Avg total: 60.77s | Avg tokens:   359 |   6.7 tok/s | Avg avg_usage_input_tokens:    63 | Avg avg_usage_output_tokens:   362 | Avg avg_usage_all_tokens:   425 | Eval passed: 4 
+
+Детали прохождения тестов:
+
+
+Провайдер: ollama, модель: qwen3:8b
+
+ 1. ✓ Task: Извлечение ID требования
+Prompt: Из фрагмента спецификации: 'REQ-42: Система должна поддерживать вход по JWT токену.' Выпиши ID требования.
+Model result: ID требования: **REQ-42**
+ 2. ✓ Task: Извлечение имени таблицы из DDL
+Prompt: Вот SQL: 'CREATE TABLE order_items (id INT, order_id INT, product_name VARCHAR);' Какое имя таблицы?
+Model result: Имя таблицы в данном SQL-запросе — **`order_items`**.
+
+### Объяснение:
+Синтаксис команды `CREATE TABLE` выглядит так:
+```sql
+CREATE TABLE имя_таблицы (столбцы);
+```
+В вашем случае:
+```sql
+CREATE TABLE order_items (id INT, order_id INT, product_name VARCHAR);
+```
+- `order_items` — это имя таблицы.
+- В скобках указаны столбцы таблицы: `id`, `order_id`, `product_name`.
+
+Таким образом, таблица называется **`order_items`**.
+ 3. ✓ Task: Поиск шага в контрольном примере
+Prompt: Контрольный пример TC_LOGIN_01:
+1. Открыть страницу /login
+2. Ввести email user@example.com
+3. Ввести пароль '123'
+4. Нажать кнопку 'Войти'
+Ожидаемый результат: перенаправление на /dashboard
+Вопрос: какой шаг содержит ввод пароля? Ответ цифрой.
+Model result: 3
+ 4. ✗ Task: Сравнение версий спецификации
+Prompt: Версия 1.2 спецификации: эндпоинты – GET: /users, POST: /users. Версия 1.3: эндпоинты – GET: /users, POST: /users, DELETE: /users/{id}. Какой эндпоинт добавлен в 1.3?
+Model result: В версии 1.3 спецификации добавлен следующий эндпоинт:
+
+**DELETE /users/{id}**
+
+Этот эндпоинт позволяет удалять пользователя по его идентификатору. В версии 1.2 такие методы не были предусмотрены.
+ 5. ✓ Task: Извлечение сигнатуры функции из руководства программиста
+Prompt: В руководстве: 'Функция calculate_discount(price: float, code: str) -> float применяет купон.' Выпиши сигнатуру.
+Model result: Сигнатура функции:  
+`calculate_discount(price: float, code: str) -> float`
