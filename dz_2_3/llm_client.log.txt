@@ -1,0 +1,33 @@
+2026-05-14 16:59:36,073 - robust_llm_client - INFO - Инициализирован RobustLLMClient с провайдерами: ['OpenAI', 'OpenRouter']
+2026-05-14 16:59:36,074 - robust_llm_client - INFO - Пробуем провайдера: OpenAI
+2026-05-14 16:59:40,171 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:59:40,184 - robust_llm_client - INFO - Успешный ответ от OpenAI | Токены: 31+87 | Стоимость: $0.000057 | За сегодня: $0.000057
+2026-05-14 16:59:41,962 - robust_llm_client - INFO - Инициализирован RobustLLMClient с провайдерами: ['OpenAI', 'OpenRouter']
+2026-05-14 16:59:41,963 - robust_llm_client - INFO - Пробуем провайдера: OpenAI
+2026-05-14 16:59:42,058 - openai._base_client - INFO - Retrying request to /chat/completions in 0.445346 seconds
+2026-05-14 16:59:42,514 - openai._base_client - INFO - Retrying request to /chat/completions in 0.980289 seconds
+2026-05-14 16:59:43,498 - robust_llm_client - WARNING - Попытка 1/5 для OpenAI: APIConnectionError (код: None) — Connection error.
+2026-05-14 16:59:43,498 - robust_llm_client - INFO - Повтор через 1.02 секунд...
+2026-05-14 16:59:44,522 - openai._base_client - INFO - Retrying request to /chat/completions in 0.416753 seconds
+2026-05-14 16:59:44,956 - openai._base_client - INFO - Retrying request to /chat/completions in 0.934908 seconds
+2026-05-14 16:59:45,904 - robust_llm_client - WARNING - Попытка 2/5 для OpenAI: APIConnectionError (код: None) — Connection error.
+2026-05-14 16:59:45,904 - robust_llm_client - INFO - Повтор через 2.88 секунд...
+2026-05-14 16:59:48,881 - openai._base_client - INFO - Retrying request to /chat/completions in 0.448336 seconds
+2026-05-14 16:59:49,332 - openai._base_client - INFO - Retrying request to /chat/completions in 0.945212 seconds
+2026-05-14 16:59:50,290 - robust_llm_client - WARNING - Попытка 3/5 для OpenAI: APIConnectionError (код: None) — Connection error.
+2026-05-14 16:59:50,291 - robust_llm_client - WARNING - Circuit breaker открыт. Провайдер заблокирован до 2026-05-14 17:00:50.291057
+2026-05-14 16:59:50,291 - robust_llm_client - INFO - Повтор через 5.92 секунд...
+2026-05-14 16:59:56,217 - robust_llm_client - ERROR - Провайдер OpenAI не сработал: Провайдер OpenAI временно заблокирован circuit breaker'ом
+2026-05-14 16:59:56,217 - robust_llm_client - INFO - Пробуем провайдера: OpenRouter
+2026-05-14 16:59:56,844 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2026-05-14 16:59:56,846 - robust_llm_client - WARNING - Попытка 1/5 для OpenRouter: APIStatusError (код: 402) — Error code: 402 - {'error': {'message': 'Insufficient credits. This account never purchased credits.
+2026-05-14 16:59:56,846 - robust_llm_client - INFO - Повтор через 1.13 секунд...
+2026-05-14 16:59:58,091 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2026-05-14 16:59:58,092 - robust_llm_client - WARNING - Попытка 2/5 для OpenRouter: APIStatusError (код: 402) — Error code: 402 - {'error': {'message': 'Insufficient credits. This account never purchased credits.
+2026-05-14 16:59:58,093 - robust_llm_client - INFO - Повтор через 2.20 секунд...
+2026-05-14 17:00:00,414 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2026-05-14 17:00:00,416 - robust_llm_client - WARNING - Попытка 3/5 для OpenRouter: APIStatusError (код: 402) — Error code: 402 - {'error': {'message': 'Insufficient credits. This account never purchased credits.
+2026-05-14 17:00:00,416 - robust_llm_client - WARNING - Circuit breaker открыт. Провайдер заблокирован до 2026-05-14 17:01:00.416351
+2026-05-14 17:00:00,416 - robust_llm_client - INFO - Повтор через 4.17 секунд...
+2026-05-14 17:00:04,586 - robust_llm_client - ERROR - Провайдер OpenRouter не сработал: Провайдер OpenRouter временно заблокирован circuit breaker'ом
+2026-05-14 17:00:04,586 - robust_llm_client - CRITICAL - Все провайдеры недоступны
