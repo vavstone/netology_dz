@@ -10,15 +10,15 @@ class RedisCache:
         self.client = redis.Redis(host=host, port=port, decode_responses=True)
         self.ttl = ttl
 
-    def _make_key(self, question:str)->str:
+    @staticmethod
+    def _make_key(question:str)->str:
         normalized_question = _normalize_url(question)
         return f"support:{hashlib.sha256(normalized_question.encode()).hexdigest()}"
 
     def get(self,question:str)->str|None:
-        key = self._make_key(question)
-        return self.client.get(key)
+        return self.client.get(self._make_key(question))
 
-    def put(self,question:str,answer:str):
+    def set(self,question:str,answer:str):
         key = self._make_key(question)
         self.client.setex(key,self.ttl,answer)
 
