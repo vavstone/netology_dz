@@ -4,7 +4,7 @@ from loguru import logger
 from typing import Generator
 
 from config import Settings
-from models import AssistantResponse, SessionStats, LLMStat, ChatResult, Category, ProviderType
+from models import AssistantResponse, SessionStats, LLMStat, ChatResult, Category, ProviderType, CategoryResult
 from infrastructure.cache import RedisCache
 from infrastructure.llm import FALLBACK_ANSWER, RobustLLMClient
 from prompts.loader import build_answer_messages, build_classifier_messages, build_classifier_system_prompt, build_system_prompt

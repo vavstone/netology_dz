@@ -1,7 +1,8 @@
 from collections.abc import Iterator
 from loguru import logger
 from typing import Generator
-from openai import OpenAI, RateLimitError, APIStatusError
+from openai import OpenAI, RateLimitError, APIStatusError, Stream, BadRequestError
+from openai.types.chat import ChatCompletion, ChatCompletionChunk
 from tenacity import retry, stop_after_attempt, retry_if_exception_type, wait_exponential
 from ollama import Options
 import ollama
@@ -157,8 +158,9 @@ class RobustLLMClient:
                         stream=True,
                         stream_options={"include_usage": True}
                     )
-                except Exception:
-                    logger.warning("stream_options не поддерживается, стрим без детальной статистики usage")
+                except BadRequestError as e:
+                    logger.error("API Error: {e}")
+                    logger.warning("вероятно stream_options не поддерживается, стрим без детальной статистики usage")
                     return client.chat.completions.create(
                         model=model,
                         messages=messages,

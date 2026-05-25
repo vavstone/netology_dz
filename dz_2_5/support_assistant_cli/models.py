@@ -69,4 +69,3 @@ class AssistantResponse:
     provider: str|None
     model: str|None
     used_fallback: bool
-
