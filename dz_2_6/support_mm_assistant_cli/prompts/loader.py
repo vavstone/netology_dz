@@ -2,6 +2,8 @@ import json
 from pathlib import Path
 from jinja2 import Template
 
+from models import ImageInfo
+
 # Определяем корень пакета
 PACKAGE_DIR = Path(__file__).parent
 
@@ -26,28 +28,29 @@ def build_classifier_system_prompt() -> str:
     """Собирает системный промпт для классификатора."""
     return _render_template(CLASSIFIER_SYSTEM_PROMPT, {"classifier_few_shots": CLASSIFIER_FEW_SHOTS})
 
-def _build_messages(system_prompt: str, user_message: str, base64file:str = None, history: list[dict[str, str]] | None = None) -> list[dict[str, str]]:
+def _build_messages(system_prompt: str, user_message: str, user_image:ImageInfo = None, history: list[dict[str, str]] | None = None) -> list[dict[str, str]]:
     """Общая функция для построения списка сообщений."""
     messages = [{'role': 'system', 'content': system_prompt}]
     if history:
         messages.extend(history)
     #вопрос с изображением
-    if base64file:
+    if user_image:
+        image_data_url = f'data:{user_image.get_mime_type()};base64,{user_image.base64content}'
         messages.append({
             'role': 'user',
             'content': [
                 {'type': 'text', 'text': user_message},
                 {'type': 'image_url', 'image_url':
-                    {'url': f'data:image/png;base64,{base64file}', 'detail': 'high'}
+                    {'url': image_data_url, 'detail': 'high'}
                  }
             ]})
     else:
         messages.append({'role': 'system', 'content': user_message})
     return messages
 
-def build_answer_messages(system_prompt: str, history: list[dict[str, str]], user_message: str, base64file: str = None) -> list[dict[str, str]]:
+def build_answer_messages(system_prompt: str, history: list[dict[str, str]], user_message: str, userImage: ImageInfo = None) -> list[dict[str, str]]:
     """Сообщения для генерации ответа с учётом истории."""
-    return _build_messages(system_prompt, user_message, base64file, history)
+    return _build_messages(system_prompt, user_message, userImage, history)
 
 def build_classifier_messages(system_prompt: str, user_message: str) -> list[dict[str, str]]:
     """Сообщения для классификации (без истории)."""

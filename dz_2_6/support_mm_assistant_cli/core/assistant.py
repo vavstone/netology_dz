@@ -4,7 +4,8 @@ from loguru import logger
 from typing import Generator
 
 from config import Settings
-from models import AssistantResponse, SessionStats, LLMStat, ChatResult, Category, ProviderType, CategoryResult, AssistantAppState
+from models import AssistantResponse, SessionStats, LLMStat, ChatResult, Category, ProviderType, CategoryResult, \
+    AssistantAppState, ImageInfo
 from infrastructure.cache import RedisCache
 from infrastructure.llm import FALLBACK_ANSWER, RobustLLMClient
 from prompts.loader import build_answer_messages, build_classifier_messages, build_classifier_system_prompt, build_system_prompt
@@ -24,7 +25,7 @@ class SupportAssistantApp:
         self.cache = RedisCache(settings.redis_host, settings.redis_port, settings.redis_ttl)
         self.client = RobustLLMClient(settings)
         self.state = AssistantAppState.MAIN_MENU
-        self.base64img_for_question = ''
+        self.image_info: ImageInfo = None
 
 
     def handle_command(self, command: str) -> str | None:
@@ -78,7 +79,7 @@ class SupportAssistantApp:
             self.stats.local_llm_calls += 1
             self.stats.local_total_tokens += chat_result.stat.total_tokens
 
-    def respond(self, user_message: str, user_file_base64: str = None) -> Generator[str, None, AssistantResponse]:
+    def respond(self, user_message: str, user_image: ImageInfo = None) -> Generator[str, None, AssistantResponse]:
         """
         Основной метод обработки сообщения.
         Возвращает генератор, выдающий чанки ответа, а после завершения – AssistantResponse.
@@ -127,7 +128,7 @@ class SupportAssistantApp:
             )
 
         # ---------- 3. Кеш (используем только если не вопрос с изображением) ----------
-        if user_file_base64 is None:
+        if user_image is None:
             cached = self.cache.get(user_message)
             if cached is not None:
                 self.stats.cache_hits += 1
@@ -141,7 +142,7 @@ class SupportAssistantApp:
 
         # ---------- 4. Основной потоковый ответ ----------
         self.stats.cache_misses += 1
-        messages = build_answer_messages(self.system_prompt, self.history, user_message)
+        messages = build_answer_messages(self.system_prompt, self.history, user_message, user_image)
 
         try:
             answer_stream = self.client.answer(messages)
@@ -149,7 +150,7 @@ class SupportAssistantApp:
             logger.error(f"Не удалось инициализировать поток ответа: {e}")
             fallback_text = FALLBACK_ANSWER
             latency = time.perf_counter() - started_at
-            self._log(user_message, str(category_result.category), fallback_text, 0, latency, False, None, "error")
+            self._log(user_message, str(category_result.category), fallback_text, 0, latency, False, None, "error", user_message)
             return self._yield_single_response(
                 fallback_text, category_result.category, False, latency,
                 None, None, True
@@ -205,7 +206,7 @@ class SupportAssistantApp:
             self._log(
                 user_message, str(category_result.category), chat_result.text,
                 chat_result.stat.total_tokens, latency, False,
-                chat_result.provider, chat_result.model
+                chat_result.provider, chat_result.model, user_image
             )
 
             return AssistantResponse(
@@ -225,9 +226,12 @@ class SupportAssistantApp:
     @staticmethod
     def _log(user_message: str, category: str, answer: str,
              tokens: int, latency_seconds: float, from_cache: bool,
-             provider: str | None, model: str | None) -> None:
+             provider: str | None, model: str | None, image_info: ImageInfo|None = None) -> None:
         """Записывает событие в лог."""
+        img_info_str = ''
+        if image_info:
+            img_info_str=f' | IMG: {image_info.file_name} |'
         logger.info(
             f"{category} | {provider}/{model} | {tokens} tok | {latency_seconds:.3f}s | "
-            f"cache={from_cache} | Q: {user_message} | A: {answer}"
+            f"cache={from_cache} | Q: {user_message} |{img_info_str} A: {answer}"
         )

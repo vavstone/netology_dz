@@ -1,6 +1,9 @@
 from dataclasses import dataclass
 from enum import StrEnum
 
+from dict import MIME_TYPES
+
+
 class Category(StrEnum):
     FAQ = "faq"
     TECHNICAL = "technical"
@@ -19,7 +22,6 @@ class AssistantAppState(StrEnum):
     MAIN_MENU = "main_menu"
     WAITING_FOR_IMG = "waiting_for_img"
     WAITING_FOR_IMG_QUESTION = "waiting_for_img_question"
-
 
 @dataclass(slots=True)
 class SessionStats:
@@ -74,3 +76,16 @@ class AssistantResponse:
     provider: str|None
     model: str|None
     used_fallback: bool
+
+@dataclass(slots=True)
+class ImageInfo:
+    file_name: str
+    file_full_name: str
+    size: int
+    base64content: str
+    extension: str
+    def get_mime_type(self) -> str:
+        ext = self.extension.lower().lstrip('.')  # убираем точку, если есть
+        return MIME_TYPES.get(ext, 'application/octet-stream')  # fallback
+    def is_valid_image(self) -> bool:
+        return self.extension.lower().lstrip('.') in MIME_TYPES.keys()
