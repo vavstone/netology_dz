@@ -1,10 +1,19 @@
 from config import Settings
+from loguru import logger
 from core.assistant import SupportAssistantApp
 from models import AssistantResponse
+
+def setup_logging(settings: Settings) -> None:
+    """Настраивает логирование единожды."""
+    logger.remove()  # удаляем стандартный хендлер (вывод в консоль)
+    logger.add(settings.log_path, format="{time} {message}", rotation="10 MB")
+    # можно добавить и вывод в консоль, если нужно:
+    # logger.add(sys.stderr, format="{time} {level} {message}", level="INFO")
 
 
 def main():
     settings = Settings.from_env()
+    setup_logging(settings)
     assistant = SupportAssistantApp(settings)
 
     print(f"=== {settings.service_name} Support CLI ===")

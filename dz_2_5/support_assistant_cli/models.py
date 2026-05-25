@@ -27,6 +27,10 @@ class SessionStats:
     cloud_llm_calls: int = 0
     local_total_tokens: int = 0
     local_llm_calls: int = 0
+    categories_faq: int = 0
+    categories_technical: int = 0
+    categories_complaint: int = 0
+    categories_escalation: int = 0
 
 @dataclass(slots=True)
 class LLMStat:
@@ -65,3 +69,4 @@ class AssistantResponse:
     provider: str|None
     model: str|None
     used_fallback: bool
+
