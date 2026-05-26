@@ -28,8 +28,8 @@ def build_classifier_system_prompt() -> str:
     """Собирает системный промпт для классификатора."""
     return _render_template(CLASSIFIER_SYSTEM_PROMPT, {"classifier_few_shots": CLASSIFIER_FEW_SHOTS})
 
-def _build_messages(system_prompt: str, user_message: str, user_image:ImageInfo = None, history: list[dict[str, str]] | None = None) -> list[dict[str, str]]:
-    """Общая функция для построения списка сообщений."""
+def _build_messages(system_prompt: str, user_message: str, user_image: ImageInfo | None = None, history: list[dict[str, str]] | None = None) -> list[dict[str, str]]:
+    """Формирует список сообщений для API, включая системный промпт, историю и текущий запрос."""
     messages = [{'role': 'system', 'content': system_prompt}]
     if history:
         messages.extend(history)
@@ -45,12 +45,12 @@ def _build_messages(system_prompt: str, user_message: str, user_image:ImageInfo 
                  }
             ]})
     else:
-        messages.append({'role': 'system', 'content': user_message})
+        messages.append({'role': 'user', 'content': user_message})
     return messages
 
-def build_answer_messages(system_prompt: str, history: list[dict[str, str]], user_message: str, userImage: ImageInfo = None) -> list[dict[str, str]]:
+def build_answer_messages(system_prompt: str, history: list[dict[str, str]], user_message: str, user_image: ImageInfo|None = None) -> list[dict[str, str]]:
     """Сообщения для генерации ответа с учётом истории."""
-    return _build_messages(system_prompt, user_message, userImage, history)
+    return _build_messages(system_prompt, user_message, user_image, history)
 
 def build_classifier_messages(system_prompt: str, user_message: str) -> list[dict[str, str]]:
     """Сообщения для классификации (без истории)."""

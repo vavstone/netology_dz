@@ -1,8 +1,7 @@
 from collections.abc import Iterator
 from loguru import logger
 from typing import Generator
-from openai import OpenAI, RateLimitError, APIStatusError, Stream, BadRequestError
-from openai.types.chat import ChatCompletion, ChatCompletionChunk
+from openai import OpenAI, RateLimitError, APIStatusError, BadRequestError
 from tenacity import retry, stop_after_attempt, retry_if_exception_type, wait_exponential
 from ollama import Options
 import ollama
@@ -83,7 +82,7 @@ class RobustLLMClient:
     # ---------------- Синхронный вызов (без стрима) ----------------
     def _call(
             self,
-            provider_type: ProviderType,
+            provider_type: ProviderType|None,
             client: OpenAI,
             model: str,
             messages: list[dict[str, str]],
@@ -108,7 +107,6 @@ class RobustLLMClient:
                 )
                 answer = (response.choices[0].message.content or "").strip()
                 stat = self._extract_stat_from_openai_response(response)
-
             elif provider_type == ProviderType.OLLAMA:
                 response = ollama.chat(
                     model=model,
@@ -117,18 +115,15 @@ class RobustLLMClient:
                 )
                 answer = (response['message']['content'] or "").strip()
                 stat = self._extract_stat_from_ollama_response(response)
-
             else:
                 raise ValueError(f"Неизвестный тип провайдера: {provider_type}")
-
             return LLMAnswerWithStat(answer or FALLBACK_ANSWER, stat)
-
         return _do()
 
     # ---------------- Потоковый вызов (генератор) ----------------
     def _call_stream(
             self,
-            provider_type: ProviderType,
+            provider_type: ProviderType|None,
             client: OpenAI,
             model: str,
             messages: list[dict[str, str]],
@@ -159,8 +154,8 @@ class RobustLLMClient:
                         stream_options={"include_usage": True}
                     )
                 except BadRequestError as e:
-                    logger.error("API Error: {e}")
-                    logger.warning("вероятно stream_options не поддерживается, стрим без детальной статистики usage")
+                    logger.error(f"API Error: {e}")
+                    logger.warning("Вероятно stream_options не поддерживается, стрим без детальной статистики usage")
                     return client.chat.completions.create(
                         model=model,
                         messages=messages,
@@ -184,7 +179,6 @@ class RobustLLMClient:
         def generator() -> Generator[str, None, LLMAnswerWithStat]:
             answer_parts = []
             prompt_tokens = completion_tokens = total_tokens = cached_tokens = 0
-
             if provider_type == ProviderType.OPENAIREADY:
                 for chunk in stream_iter:
                     if chunk.choices:
@@ -200,7 +194,6 @@ class RobustLLMClient:
                         total_tokens = getattr(usage, 'total_tokens', 0)
                         if hasattr(usage, 'prompt_tokens_details') and usage.prompt_tokens_details:
                             cached_tokens = getattr(usage.prompt_tokens_details, 'cached_tokens', 0)
-
             elif provider_type == ProviderType.OLLAMA:
                 for chunk in stream_iter:
                     content = chunk.get('message', {}).get('content', '')
@@ -211,7 +204,6 @@ class RobustLLMClient:
                         prompt_tokens = chunk.get('prompt_eval_count', 0)
                         completion_tokens = chunk.get('eval_count', 0)
                         total_tokens = prompt_tokens + completion_tokens
-
             full_answer = ''.join(answer_parts).strip()
             stat = LLMStat(
                 prompt_tokens=prompt_tokens,
@@ -220,7 +212,6 @@ class RobustLLMClient:
                 cached_tokens=cached_tokens
             )
             return LLMAnswerWithStat(full_answer or FALLBACK_ANSWER, stat)
-
         return generator()
 
     # ---------------- Публичные методы ----------------
@@ -238,8 +229,15 @@ class RobustLLMClient:
                     temperature=0,
                     max_tokens=10
                 )
+                category_str = raw.text.strip().lower()
+                # Валидация полученной категории
+                try:
+                    category = Category(category_str)
+                except ValueError:
+                    logger.warning(f"Некорректная категория от LLM: '{category_str}', используется эвристика")
+                    category = heuristic_classify(messages[-1]['content'])
                 return CategoryResult(
-                    category=Category(raw.text.strip().lower()),
+                    category=category,
                     stat=raw.stat,
                     provider=provider,
                     model=model,
@@ -247,7 +245,6 @@ class RobustLLMClient:
                 )
             except Exception as e:
                 logger.warning(f"Ошибка классификации провайдером {provider}/{model}: {e}")
-
         # Эвристический fallback
         category = heuristic_classify(messages[-1]['content'])
         return CategoryResult(
@@ -268,18 +265,15 @@ class RobustLLMClient:
             try:
                 if used_fallback:
                     logger.info(f"Ответ переключён на fallback ({provider}, {model})")
-
                 stream_gen = self._call_stream(
                     provider_type=self.get_provider_type(provider),
                     client=client,
                     model=model,
                     messages=messages
                 )
-
                 first_chunk = next(stream_gen)
                 if first_chunk:
                     yield first_chunk
-
                 while True:
                     try:
                         chunk = next(stream_gen)
@@ -295,7 +289,6 @@ class RobustLLMClient:
                             used_fallback=used_fallback
                         )
                         return result
-
             except Exception as e:
                 logger.warning(f"Провайдер {provider}/{model} недоступен: {e}")
                 continue
@@ -310,5 +303,4 @@ class RobustLLMClient:
                 model=None,
                 used_fallback=True
             )
-
         return _fallback_generator()

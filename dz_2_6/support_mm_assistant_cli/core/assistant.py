@@ -25,11 +25,10 @@ class SupportAssistantApp:
         self.cache = RedisCache(settings.redis_host, settings.redis_port, settings.redis_ttl)
         self.client = RobustLLMClient(settings)
         self.state = AssistantAppState.MAIN_MENU
-        self.image_info: ImageInfo = None
-
+        self.image_info: ImageInfo | None = None
 
     def handle_command(self, command: str) -> str | None:
-        """Обрабатывает команды пользователя (/clear, /stats, /quit, ...)."""
+        """Обрабатывает команды пользователя (/main_menu, /clear, /stats, /quit, ...)."""
         if command == "/main_menu":
             self.state = AssistantAppState.MAIN_MENU
             return "Введите свой вопрос или одну из команд: /main_menu, /clear, /stats, /send_img, /quit"
@@ -69,17 +68,18 @@ class SupportAssistantApp:
         yield text
         return AssistantResponse(text, category, from_cache, latency, provider, model, used_fallback)
 
-    def _update_stats_from_chat_result(self, chat_result: ChatResult) -> None:
+    def _update_stats_from_chat_result(self, chat_result: ChatResult | None) -> None:
         """Обновляет статистику на основе результата LLM."""
-        if RobustLLMClient.get_provider_type(chat_result.provider) == ProviderType.OPENAIREADY:
-            self.stats.cloud_llm_calls += 1
-            self.stats.cloud_total_tokens += chat_result.stat.total_tokens
-            self.stats.cloud_cache_tokens += chat_result.stat.cached_tokens
-        elif RobustLLMClient.get_provider_type(chat_result.provider) == ProviderType.OLLAMA:
-            self.stats.local_llm_calls += 1
-            self.stats.local_total_tokens += chat_result.stat.total_tokens
+        if chat_result:
+            if RobustLLMClient.get_provider_type(chat_result.provider) == ProviderType.OPENAIREADY:
+                self.stats.cloud_llm_calls += 1
+                self.stats.cloud_total_tokens += chat_result.stat.total_tokens
+                self.stats.cloud_cache_tokens += chat_result.stat.cached_tokens
+            elif RobustLLMClient.get_provider_type(chat_result.provider) == ProviderType.OLLAMA:
+                self.stats.local_llm_calls += 1
+                self.stats.local_total_tokens += chat_result.stat.total_tokens
 
-    def respond(self, user_message: str, user_image: ImageInfo = None) -> Generator[str, None, AssistantResponse]:
+    def respond(self, user_message: str, user_image: ImageInfo | None = None) -> Generator[str, None, AssistantResponse]:
         """
         Основной метод обработки сообщения.
         Возвращает генератор, выдающий чанки ответа, а после завершения – AssistantResponse.
@@ -127,7 +127,7 @@ class SupportAssistantApp:
                 "router", "escalation", False
             )
 
-        # ---------- 3. Кеш (используем только если не вопрос с изображением) ----------
+        # ---------- 3. Кеш (только если нет изображения) ----------
         if user_image is None:
             cached = self.cache.get(user_message)
             if cached is not None:
@@ -190,8 +190,9 @@ class SupportAssistantApp:
                     used_fallback=True
                 )
 
-            # Кешируем итоговый ответ
-            self.cache.set(user_message, chat_result.text)
+            # Кешируем итоговый ответ (только если нет изображения)
+            if user_image is None:
+                self.cache.set(user_message, chat_result.text)
 
             # Обновляем счётчик неудачных попыток
             if chat_result.text.strip() == FALLBACK_ANSWER:
@@ -226,11 +227,9 @@ class SupportAssistantApp:
     @staticmethod
     def _log(user_message: str, category: str, answer: str,
              tokens: int, latency_seconds: float, from_cache: bool,
-             provider: str | None, model: str | None, image_info: ImageInfo|None = None) -> None:
+             provider: str | None, model: str | None, image_info: ImageInfo | None = None) -> None:
         """Записывает событие в лог."""
-        img_info_str = ''
-        if image_info:
-            img_info_str=f' | IMG: {image_info.file_name} |'
+        img_info_str = f' IMG: {image_info.file_name} |' if image_info else ''
         logger.info(
             f"{category} | {provider}/{model} | {tokens} tok | {latency_seconds:.3f}s | "
             f"cache={from_cache} | Q: {user_message} |{img_info_str} A: {answer}"
