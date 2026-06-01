@@ -1,0 +1,45 @@
+# -------------------------------
+# 1. Список моделей
+# -------------------------------
+model_list:
+  # --- Primary: Локальная Ollama (gemma3:4b) ---
+  # Эта модель будет выбрана по умолчанию для модели "my-gateway-model".
+  - model_name: my-gateway-model
+    litellm_params:
+      model: ollama/gemma3:4b          # Указываем, что это модель Ollama
+      api_base: http://localhost:11434 # URL вашего локального Ollama сервера
+    model_info:
+      mode: chat                        # Явно указываем режим чата
+
+  # --- Fallback: GigaChat Pro ---
+  # Эта модель будет использоваться как резервная, если primary недоступна.
+  - model_name: my-gateway-model
+    litellm_params:
+      model: gigachat/GigaChat-2   # Название модели GigaChat[reference:1]
+      api_key: os.environ/GIGACHAT_CREDENTIALS # Ключ берем из переменной окружения
+      ssl_verify: false                 # Важно: отключаем проверку SSL для GigaChat[reference:2]
+    model_info:
+      mode: chat
+
+# -------------------------------
+# 2. Настройки роутера (Router)
+# -------------------------------
+router_settings:
+  # --- Настройка Fallback---
+  # Определяем, что при ошибке модели "my-gateway-model" нужно переключиться на другую.
+  fallbacks: [{"my-gateway-model": ["my-gateway-model"]}]
+  # Как это работает? Когда запрос к "my-gateway-model" не удается, LiteLLM
+  # обращается к списку из model_list, фильтруя модели с тем же model_name.
+  # Найденный "my-gateway-model" от GigaChat и будет следующим кандидатом.
+
+  # --- Дополнительные настройки надежности (опционально)---
+  num_retries: 1           # Количество повторных попыток перед fallback[reference:3].
+  request_timeout: 30      # Общее время ожидания ответа в секундах[reference:4].
+  routing_strategy: "simple-shuffle" # Стратегия балансировки (для данного случая не критична)[reference:5].
+
+# -------------------------------
+# 3. Общие настройки LiteLLM
+# -------------------------------
+litellm_settings:
+  drop_params: true       # Игнорировать параметры, не поддерживаемые провайдером.
+  set_verbose: false      # Отключаем детальное логирование для чистоты вывода.
