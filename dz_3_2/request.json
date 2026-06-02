@@ -1,0 +1,6 @@
+{
+  "model": "my-gateway-model",
+  "messages": [
+    {"role": "user", "content": "Привет, кто ты?"}
+  ]
+}
